@@ -1,0 +1,136 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1a1a1a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --translation-distance: 100px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sun {
+  width: 70px;
+  aspect-ratio: 1;
+  background-color: #cf7929;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(207, 121, 41, 0.7);
+}
+
+.mercury {
+  width: 10px;
+  aspect-ratio: 1;
+  background-color: #878482;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(135, 132, 130, 0.7);
+  position: absolute;
+  animation: orbit 8s linear infinite;
+}
+
+.venus {
+  width: 15px;
+  aspect-ratio: 1;
+  background-color: #f2b750;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(242, 183, 80, 0.7);
+  position: absolute;
+  animation: orbit 6s linear infinite;
+  --translation-distance: 150px;
+}
+
+.earth {
+  width: 17px;
+  aspect-ratio: 1;
+  background-color: #4556d6;
+  border-radius: 50%;
+  box-shadow: 0 0 17px rgba(69, 86, 214, 0.7);
+  position: absolute;
+  animation: orbit 5s linear infinite;
+  --translation-distance: 200px;
+}
+
+.mars {
+  width: 15px;
+  aspect-ratio: 1;
+  background-color: #bd945b;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(189, 148, 91, 0.7);
+  position: absolute;
+  animation: orbit 4s linear infinite;
+  --translation-distance: 250px;
+}
+
+.jupiter {
+  width: 30px;
+  aspect-ratio: 1;
+  background-color: #c2ab8c;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(194, 171, 140, 0.7);
+  position: absolute;
+  animation: orbit 3s linear infinite;
+  --translation-distance: 300px;
+}
+
+.saturn {
+  width: 25px;
+  aspect-ratio: 1;
+  background-color: #b3a798;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(179, 167, 152, 0.7);
+  position: absolute;
+  animation: orbit 2.7s linear infinite;
+  --translation-distance: 350px;
+}
+
+.uranium {
+  width: 21px;
+  aspect-ratio: 1;
+  background-color: #58b9f5;
+  border-radius: 50%;
+  box-shadow: 0 0 21px rgba(88, 185, 245, 0.7);
+  position: absolute;
+  animation: orbit 2.5s linear infinite;
+  --translation-distance: 400px;
+}
+
+.neptune {
+  width: 19px;
+  aspect-ratio: 1;
+  background-color: #2491d4;
+  border-radius: 50%;
+  box-shadow: 0 0 19px rgba(36, 145, 212, 0.7);
+  position: absolute;
+  animation: orbit 2.3s linear infinite;
+  --translation-distance: 450px;
+}
+
+@keyframes orbit {
+  0% {
+   transform: rotate(0deg) translateX(var(--translation-distance));
+  }
+  50% {
+    transform: rotate(-180deg) translateX(var(--translation-distance));
+  }
+  100% {
+    transform: rotate(-360deg) translateX(var(--translation-distance));
+  }
+}
+
+
+
+
